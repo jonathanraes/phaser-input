@@ -3,7 +3,7 @@
  * Adds input boxes to Phaser like CanvasInput, but also works for WebGL and Mobile, made for Phaser only.
  *
  * OrangeGames
- * Build at 02-06-2017
+ * Build at 23-07-2018
  * Released under MIT License 
  */
 
@@ -35,7 +35,7 @@ var PhaserInput;
             this.game = game;
             this.focusIn = focusIn;
             this.focusOut = focusOut;
-            var canvasTopX = this.game.canvas.getBoundingClientRect().top + document.body.scrollTop;
+            var canvasTopX = this.game.canvas.getBoundingClientRect().top + document.documentElement.scrollTop;
             this.element = document.createElement('input');
             this.element.id = id;
             this.element.style.position = 'absolute';

@@ -30,7 +30,7 @@ module PhaserInput {
             this.focusIn = focusIn;
             this.focusOut = focusOut;
 
-            let canvasTopX: number = this.game.canvas.getBoundingClientRect().top + document.body.scrollTop;
+            let canvasTopX: number = this.game.canvas.getBoundingClientRect().top + document.documentElement.scrollTop;
 
             this.element = document.createElement('input');
 
